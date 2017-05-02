@@ -1,0 +1,20 @@
+#ifndef OOSDL_sdl_error_CPP
+#define OOSDL_sdl_error_CPP
+
+#include <SDL/SDL.h>
+#include "sdl_error.hpp"
+
+OOSDL::sdl_error::sdl_error()
+: error(SDL_GetError())
+{}
+
+OOSDL::sdl_error::sdl_error(const char* error)
+: error(error)
+{}
+
+const char* OOSDL::sdl_error::what() const throw()
+{
+	return this->error;
+}
+
+#endif

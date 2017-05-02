@@ -1,0 +1,11 @@
+#ifndef OOSDL_thread_not_running_CPP
+#define OOSDL_thread_not_running_CPP
+
+#include "thread_not_running.hpp"
+
+const char* OOSDL::thread_not_running::what() const throw()
+{
+	return std::exception::what();
+}
+
+#endif

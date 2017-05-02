@@ -1,0 +1,13 @@
+#ifndef OOSDL_no_channel_found_HPP
+#define OOSDL_no_channel_found_HPP
+
+#include <exception>
+
+namespace OOSDL {
+	class no_channel_found : public std::exception {
+	public:
+		virtual const char* what() const throw();
+	};
+};
+
+#endif

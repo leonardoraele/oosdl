@@ -1,0 +1,15 @@
+#ifndef OOSDL_mix_error_HPP
+#define OOSDL_mix_error_HPP
+
+#include "sdl_error.hpp"
+
+namespace OOSDL {
+	class mix_error : public sdl_error {
+	public:
+		mix_error();
+		mix_error(const char*);
+		~mix_error() throw() {};
+	};
+};
+
+#endif
